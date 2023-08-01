@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Roboto:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  color: #ffff;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #565353;
+  background: radial-gradient(
+    farthest-corner at 50% -10%,
+    #ffff 0%,
+    rgb(119, 211, 114) 30%,
+    rgb(97, 165, 93) 50%,
+    rgb(53, 83, 48) 80%,
+    rgb(33, 53, 38) 100%
+  );
+}
+
+.home {
+  position: absolute;
+  top: 1rem;
+  right: 7rem;
+  font-size: 1.5rem;
+}
+main {
+  font-size: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+main > * {
+  margin-bottom: 4rem;
+}
+main > *:last-child {
+  margin-bottom: 0;
+}
+.title,
+.loading {
+  text-transform: uppercase;
+}
+.title {
+  text-align: center;
+  font-weight: 400;
+}
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.27rem;
+}
+.loading > p {
+  margin-bottom: 1.5rem;
+}
+.loading-gauge {
+  width: 80%;
+  height: 1rem;
+  background-color: #ffff;
+  text-align: start;
+  position: relative;
+  box-shadow: 0rem 0rem 3rem black;
+}
+.loading-gauge::before {
+  content: "0%";
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+}
+.loading-gauge::after {
+  content: "100%";
+  position: absolute;
+  top: 1.5rem;
+  right: 0;
+}
+.loading-success {
+  width: 60%;
+  height: inherit;
+
+  background-color: #a0dfef;
+}
+
+.notify-me {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: 400;
+  color: #565353;
+  background-color: #a0dfef;
+}
+.social-media {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-media > * {
+  padding: 0.5rem;
+  border: 0.1rem solid #ffff;
+  border-radius: 50%;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #b0adad;
+  margin-bottom: 1rem;
+}
+.copyright::before {
+  display: block;
+  content: "";
+  width: 80%;
+  height: 0.1rem;
+  background-color: #b0adad;
+  margin-bottom: 1rem;
+}
